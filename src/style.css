@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  border: grey 2px solid;
+  justify-content: space-between;
+  height: 25px;
+}
+
+logo {
+  padding: 5px;
+}
+
+ul li {
+  display: inline;
+  padding: 30px;
+}
+
+header,
+main,
+section {
+  text-align: center;
+  border: 2px grey solid;
+}
