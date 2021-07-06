@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 body {
@@ -10,9 +11,30 @@ body {
 nav {
   display: flex;
   align-items: center;
-  border: grey 2px solid;
   justify-content: space-between;
   height: 25px;
+  background-color: #2c73d2;
+  color: white;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+#nav li a:visited {
+  color: white;
+  text-decoration: none;
+}
+#nav li a:hover {
+  color: #00c9a7;
+}
+
+#header_links a:visited,
+#header_links a:hover {
+  color: #2c73d2;
 }
 
 logo {
@@ -26,17 +48,37 @@ ul li {
 
 header,
 main,
-section,
-.project {
+section {
   text-align: center;
-  border: 2px grey solid;
 }
 
 header {
-  padding: 250px;
+  padding: 200px;
+}
+
+.about_blurb {
+  display: inline-block;
+  text-align: left;
+  margin-top: 0;
+}
+
+i.fa.fa-github,
+i.fa.fa-linkedin-square {
+  font-size: 45px;
+}
+
+#cta_button button {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #00c9a7;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
 }
 
 .project {
+  text-align: center;
   padding-top: 40px;
 }
 
@@ -60,3 +102,25 @@ header {
 .project_skills li {
   padding: 0;
 }
+
+.skills {
+  width: 50%;
+  margin: 0 auto;
+}
+
+i {
+  font-size: 75px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+ */
